@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>G2 Solutions — O nama</title>
+  <meta content="Izravan i praktičan pristup IT-u i financijama." name="description"/>
+  <meta content="#0b1220" name="theme-color"/>
+  
+  <link href="https://pgrce.github.io/g2solutions/hr/o-nama/" rel="canonical"/>
+  <link rel="alternate" hreflang="x-default" href="https://pgrce.github.io/g2solutions/" />
+  <link rel="alternate" hreflang="en" href="https://pgrce.github.io/g2solutions/en/about/" />
+  <link rel="alternate" hreflang="hr" href="https://pgrce.github.io/g2solutions/hr/o-nama/" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pgrce.github.io/g2solutions/hr/o-nama/">
+  <meta property="og:title" content="O nama — G2 Solutions">
+  <meta property="og:description" content="Radimo jednostavno i izravno — fokusirani na rješenja koja stvarno pomažu u svakodnevnom radu.">
+  <meta property="og:image" content="https://pgrce.github.io/g2solutions/assets/og-image.png">
+  <meta property="og:locale" content="hr_HR" />
+  <meta property="og:locale:alternate" content="en_GB" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O nama — G2 Solutions">
+  <meta name="twitter:description" content="Radimo jednostavno i izravno — fokusirani na rješenja koja stvarno pomažu u svakodnevnom radu.">
+  <meta name="twitter:image" content="https://pgrce.github.io/g2solutions/assets/og-image.png">
+
+  <link href="../../favicon.ico" rel="icon"/>
+  <link href="../../apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="../../assets/site.css?v=2" rel="stylesheet"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": { "@id": "https://pgrce.github.io/g2solutions/#identity" }
+  }
+  </script>
+</head>
+<body class="subpage">
+<nav class="topbar" aria-label="Language">
+  <div class="lang">
+    <a aria-current="page" class="active" data-lang="hr" href="./">HR</a>
+    <a data-lang="en" href="../../en/about/">EN</a>
+  </div>
+</nav>
+<main class="wrap">
+
+<section class="subHead">
+  <a href="../" class="subHeadLogo" aria-label="G2 Solutions — Naslovnica">
+    <span class="heroG">G</span><span class="heroTwo">2</span>
+  </a>
+  <h1>O nama</h1>
+  <p>Radimo jednostavno i izravno — fokusirani na rješenja koja stvarno pomažu u svakodnevnom radu.</p>
+</section>
+
+<section class="panel cta" aria-label="Kontakt poziv na akciju" style="margin-top:16px">
+  <h2 class="h1" style="font-size:20px;margin:0 0 8px">Imate pitanje ili trebate podršku?</h2>
+  <p class="p" style="margin:0 0 14px">Javite se i odgovorit ćemo unutar jednog radnog dana.</p>
+  <a class="btn" href="../?focus=contactName#contact">Pošalji email</a>
+</section>
+
+<footer class="footer">© 2026 G2 Solutions · <a href="mailto:info@g2.hr">info@g2.hr</a></footer>
+</main>
+
+<div class="floatMail" aria-label="Brzi kontakt">
+  <a href="../?focus=contactName#contact" title="Pošalji upit" aria-label="Pošalji upit" data-focus="contactName">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4.5 7.5h15A2.5 2.5 0 0 1 22 10v8A2.5 2.5 0 0 1 19.5 20.5h-15A2.5 2.5 0 0 1 2 18v-8A2.5 2.5 0 0 1 4.5 7.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M3.2 9.2 12 14.6l8.8-5.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+  // Staggered entrance animations
+  (function(){
+    var rows = [];
+    var h = document.querySelector('.subHead'); if(h) rows.push([h]);
+    var si = document.querySelectorAll('.serviceItem');
+    for(var i = 0; i < si.length; i += 2){
+      var row = [si[i]];
+      if(si[i+1]) row.push(si[i+1]);
+      rows.push(row);
+    }
+    var cta = document.querySelector('.panel.cta'); if(cta) rows.push([cta]);
+    var ft = document.querySelector('.wrap > .footer'); if(ft) rows.push([ft]);
+    var all = [];
+    rows.forEach(function(g){ g.forEach(function(el){ all.push(el); }); });
+    all.forEach(function(el){ el.style.opacity = '0'; });
+    rows.forEach(function(group, i){
+      setTimeout(function(){
+        group.forEach(function(el){ el.style.transition = 'opacity .8s ease'; el.style.opacity = '1'; });
+      }, 300 + i * 300);
+    });
+  })();
+
+  // Save language choice
+  document.querySelectorAll('a[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('g2_lang', a.getAttribute('data-lang')); } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>
