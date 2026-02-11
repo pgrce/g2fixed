@@ -195,7 +195,7 @@ a{color:inherit}
   height:420px;
   width:auto;
   display:block;
-  opacity:0.22;
+  opacity:0.18;
   user-select:none;
   -webkit-user-select:none;
 }
@@ -732,5 +732,6 @@ textarea.field{min-height:100px; resize:vertical}
   .orb{animation:none!important}
   .scrollHint{animation:none!important}
 }
+
 
 
