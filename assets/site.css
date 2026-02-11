@@ -189,7 +189,7 @@ a{color:inherit}
   height:420px;
   width:auto;
   display:block;
-  opacity:0.14;
+  opacity:0.1;
   user-select:none;
   -webkit-user-select:none;
 }
@@ -728,6 +728,7 @@ textarea.field{min-height:100px; resize:vertical}
   .orb{animation:none!important}
   .scrollHint{animation:none!important}
 }
+
 
 
 
