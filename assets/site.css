@@ -186,22 +186,28 @@ a{color:inherit}
 
 /* Watermark image */
 .heroLogoImg{
-  height:520px;
+  height:420px;
   width:auto;
   display:block;
-  opacity:0.20;
+  opacity:0.14;
   user-select:none;
   -webkit-user-select:none;
 }
 
 /* Mobile scaling */
 @media (max-width:768px){
-  .heroLogoImg{ height:380px; opacity:0.16; }
-}
-@media (max-width:520px){
-  .heroLogoImg{ height:300px; opacity:0.14; }
+  .heroLogoImg{
+    height:320px;
+    opacity:0.12;
+  }
 }
 
+@media (max-width:520px){
+  .heroLogoImg{
+    height:240px;
+    opacity:0.10;
+  }
+}
 
 /* Ensure text is above watermark */
 .panel.hero{
@@ -722,5 +728,6 @@ textarea.field{min-height:100px; resize:vertical}
   .orb{animation:none!important}
   .scrollHint{animation:none!important}
 }
+
 
 
