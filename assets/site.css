@@ -192,6 +192,18 @@ a{color:inherit}
   letter-spacing:-.04em;
   line-height:1;
 }
+
+.heroLogoImg{
+  height:64px;
+  width:auto;
+  display:block;
+}
+
+@media (max-width:520px){
+  .heroLogoImg{
+    height:56px;
+  }
+}
 .heroLogo::after{
   content:"";
   position:absolute;
@@ -723,3 +735,4 @@ textarea.field{min-height:100px; resize:vertical}
   .orb{animation:none!important}
   .scrollHint{animation:none!important}
 }
+
