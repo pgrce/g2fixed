@@ -177,13 +177,11 @@ a{color:inherit}
 }
 
 /* Hero logo mark (watermark) */
-.heroLogo{
-  position:absolute;
-  top:46%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  z-index:0;
-  pointer-events:none;
+.snapHero{
+  align-items:center;
+  justify-content:center;
+  padding:40px 24px;
+  position:relative;   /* ← DODAJ OVO */
 }
 
 /* Watermark image */
@@ -724,4 +722,5 @@ textarea.field{min-height:100px; resize:vertical}
   .orb{animation:none!important}
   .scrollHint{animation:none!important}
 }
+
 
