@@ -815,6 +815,11 @@ textarea.field{min-height:100px; resize:vertical}
   font-weight:900;
   font-variation-settings:"wght" 900;
   letter-spacing:-.02em;
+  -webkit-text-stroke:0.35px currentColor;
+  text-shadow:
+    0 0 0 currentColor,
+    0.012em 0 currentColor,
+    -0.012em 0 currentColor;
 }
 .snapHero .fullCardTitle::after{
   width:160px;                 /* longer underline */
