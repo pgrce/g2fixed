@@ -813,6 +813,8 @@ textarea.field{min-height:100px; resize:vertical}
 .snapHero .fullCardTitle{
   font-size:48px;              /* default (between mobile + desktop) */
   font-weight:900;
+  font-variation-settings:"wght" 900;
+  letter-spacing:-.02em;
 }
 .snapHero .fullCardTitle::after{
   width:160px;                 /* longer underline */
