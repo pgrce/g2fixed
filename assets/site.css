@@ -811,7 +811,8 @@ textarea.field{min-height:100px; resize:vertical}
 
 /* ── HERO TWEAKS (bigger title + longer underline) ───────── */
 .snapHero .fullCardTitle{
-  font-size:44px;              /* default (between mobile + desktop) */
+  font-size:48px;              /* default (between mobile + desktop) */
+  font-weight:900;
 }
 .snapHero .fullCardTitle::after{
   width:160px;                 /* longer underline */
@@ -821,12 +822,12 @@ textarea.field{min-height:100px; resize:vertical}
 }
 
 @media(min-width:760px){
-  .snapHero .fullCardTitle{ font-size:58px; }
+  .snapHero .fullCardTitle{ font-size:64px; }
   .snapHero .fullCardTitle::after{ width:210px; }
 }
 
 @media(max-width:520px){
-  .snapHero .fullCardTitle{ font-size:36px; }
+  .snapHero .fullCardTitle{ font-size:40px; }
   .snapHero .fullCardTitle::after{
     width:130px;
     height:3px;
