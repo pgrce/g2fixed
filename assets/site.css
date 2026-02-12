@@ -821,6 +821,14 @@ textarea.field{min-height:100px; resize:vertical}
     0.012em 0 currentColor,
     -0.012em 0 currentColor;
 }
+
+/* Force a visibly heavier hero title across fonts/renderers */
+.snapHero .heroTitle{
+  font-family:"Segoe UI Black","Arial Black","InterVar",system-ui,sans-serif !important;
+  font-weight:900 !important;
+  font-size:52px !important;
+  letter-spacing:-.02em !important;
+}
 .snapHero .fullCardTitle::after{
   width:160px;                 /* longer underline */
   height:4px;
@@ -830,11 +838,13 @@ textarea.field{min-height:100px; resize:vertical}
 
 @media(min-width:760px){
   .snapHero .fullCardTitle{ font-size:64px; }
+  .snapHero .heroTitle{ font-size:70px !important; }
   .snapHero .fullCardTitle::after{ width:210px; }
 }
 
 @media(max-width:520px){
   .snapHero .fullCardTitle{ font-size:40px; }
+  .snapHero .heroTitle{ font-size:44px !important; }
   .snapHero .fullCardTitle::after{
     width:130px;
     height:3px;
